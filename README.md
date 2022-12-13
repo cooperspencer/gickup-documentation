@@ -1,1 +1,1 @@
-# gickup.github.io
+# gickup-documentation
