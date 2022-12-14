@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation on Gickup Docs</title>
+    <link>https://cooperspencer.github.io/gickup-documentation/docs/installation/</link>
+    <description>Recent content in Installation on Gickup Docs</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://cooperspencer.github.io/gickup-documentation/docs/installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Methods to install</title>
+      <link>https://cooperspencer.github.io/gickup-documentation/docs/installation/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cooperspencer.github.io/gickup-documentation/docs/installation/installation/</guid>
+      <description>Binary Download the latest release for your OS and architecture from Github and unpack it. Alternatively, you can copy the gickup binary to a directory from your $PATH variable, to use it globally.
+Linux/Mac 1./gickup conf.yml Windows 1gickup.exe conf.yml Docker You can grab the latest version of gickup from Github or Docker.
+Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml:/gickup/conf.yml buddyspencer/gickup Docker Compose If you prefer to use docker compose, grab the docker-compose.</description>
+    </item>
+    
+  </channel>
+</rss>

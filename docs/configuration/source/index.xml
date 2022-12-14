@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Source on Gickup Docs</title>
+    <link>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/</link>
+    <description>Recent content in Source on Gickup Docs</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github</title>
+      <link>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/github/</guid>
+      <description>1 github: 2 - token: some-token 3 token_file: token.txt 4 user: some-user 5 username: your-user 6 password: your-password 7 ssh: true 8 sshkey: /path/to/key 9 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 10 - foo 11 - bar 12 include: # this includes the repo &amp;#34;foobar&amp;#34; 13 - foobar 14 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 15 - foo 16 - bar 17 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 18 - foo1 19 - bar1 20 wiki: true 21 starred: true token: your github token.</description>
+    </item>
+    
+    <item>
+      <title>Gitea</title>
+      <link>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/gitea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/gitea/</guid>
+      <description>1 gitea: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-gitea 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 21 wiki: true 22 starred: true token: your gitea token.</description>
+    </item>
+    
+    <item>
+      <title>Gogs</title>
+      <link>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/gogs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/gogs/</guid>
+      <description>1 gitea: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-gogs 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 21 wiki: true token: your gogs token.</description>
+    </item>
+    
+    <item>
+      <title>Gitlab</title>
+      <link>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/gitlab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/gitlab/</guid>
+      <description>1 gitlab: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-gitlab 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 21 wiki: true token: your gitlab token.</description>
+    </item>
+    
+    <item>
+      <title>Bitbucket</title>
+      <link>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/bitbucket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/bitbucket/</guid>
+      <description>1 bitbucket: 2 - url: http(s)://url-to-bitbucket 3 user: some-user 4 username: your-user 5 password: your-password 6 ssh: true 7 sshkey: /path/to/key 8 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 9 - foo 10 - bar 11 include: # this includes the repo &amp;#34;foobar&amp;#34; 12 - foobar 13 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 14 - foo 15 - bar 16 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 17 - foo1 18 - bar1 url: if empty, https://bitbucket.</description>
+    </item>
+    
+    <item>
+      <title>Onedev</title>
+      <link>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/onedev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/onedev/</guid>
+      <description>1 onedev: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-onedev 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 token: your onedev token.</description>
+    </item>
+    
+    <item>
+      <title>Sourcehut</title>
+      <link>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/sourcehut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/sourcehut/</guid>
+      <description>1 sourcehut: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-sourcehut 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 21 wiki: true token: your onedev token.</description>
+    </item>
+    
+    <item>
+      <title>Any</title>
+      <link>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/any/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/any/</guid>
+      <description>1 any: 2 - url: url-to-any-repo 3 username: your-user 4 password: your-password 5 ssh: true 6 sshkey: /path/to/key 7 - url: can-also-be-a-local-path-to-a-bare-repo url: can be https, http or ssh. Could also be a local bare repository
+username: user that will be used for the clone process. password: password for said user. ssh: boolean value if the clone should be done via ssh. sshkey: if empty, it uses your home directories&#39; .</description>
+    </item>
+    
+  </channel>
+</rss>
