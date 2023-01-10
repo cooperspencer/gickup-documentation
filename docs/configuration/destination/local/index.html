@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="dark">
 <head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.108.0">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.109.0">
 <link rel="apple-touch-icon" sizes="180x180" href='https://cooperspencer.github.io/gickup-documentation/favicons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://cooperspencer.github.io/gickup-documentation/favicons/favicon-32x32.png'>
 <link rel="icon" type="image/png" sizes="16x16" href='https://cooperspencer.github.io/gickup-documentation/favicons/favicon-16x16.png'>
@@ -10,26 +10,26 @@
 <link rel="shortcut icon" href='https://cooperspencer.github.io/gickup-documentation/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://cooperspencer.github.io/gickup-documentation/favicons/browserconfig.xml'>
 <title>Local | Gickup Docs</title><meta property="og:title" content="Local" />
-<meta property="og:description" content="1 local: 2 - path: /some/path/gickup 3 structured: true path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository " />
+<meta property="og:description" content="1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/local/" /><meta property="article:section" content="docs" />
 
 
 <meta itemprop="name" content="Local">
-<meta itemprop="description" content="1 local: 2 - path: /some/path/gickup 3 structured: true path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository ">
+<meta itemprop="description" content="1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups ">
 
-<meta itemprop="wordCount" content="45">
+<meta itemprop="wordCount" content="60">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Local"/>
-<meta name="twitter:description" content="1 local: 2 - path: /some/path/gickup 3 structured: true path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository "/>
+<meta name="twitter:description" content="1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups "/>
 
 
-<link rel="stylesheet" href="https://cooperspencer.github.io/gickup-documentation/css/styles.b787c760e9baac9146c2ede65286525852ae59a548aea169fe8bb47cb2d0d77ed9a8b601537f8f61440f3d0f758ef7d94f96c8c34937a927bf61172ee1ec7ece.css" integrity="sha512-t4fHYOm6rJFGwu3mUoZSWFKuWaVIrqFp/ou0fLLQ137ZqLYBU3&#43;PYUQPPQ91jvfZT5bIw0k3qSe/YRcu4ex&#43;zg==">
+<link rel="stylesheet" href="https://cooperspencer.github.io/gickup-documentation/css/styles.9693283a9fd362fc60da12d2f6cfe037a9ea6a2a9e3a7b2a1a848abdda2792b12ea4520445267d4531177b5636e96f77d71e9ea54c76f8c764369ed0c5c999a4.css" integrity="sha512-lpMoOp/TYvxg2hLS9s/gN6nqaiqeOnsqGoSKvdonkrEupFIERSZ9RTEXe1Y26W931x6epUx2&#43;MdkNp7QxcmZpA==">
 
 
 
 
-  <meta name="description" content="1 local: 2 - path: /some/path/gickup 3 structured: true path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository ">
+  <meta name="description" content="1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups ">
 
 
 </head>
@@ -170,6 +170,8 @@
     <h1>Local</h1><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="w">  </span><span class="nt">local</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">    </span>- <span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">/some/path/gickup</span><span class="w">
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">      </span><span class="nt">structured</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">      </span><span class="nt">zip</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="w">      </span><span class="nt">keep</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
 </span></span></span></code></pre></div><ul>
 <li><code>path</code>: path to store your backup
 
@@ -178,6 +180,8 @@
 </div>
 </li>
 <li><code>structured</code>: if set to <code>true</code>, it checks out the repos in a more structured way, like <code>hoster/user|organization/repository</code></li>
+<li><code>zip</code>: zips the repository</li>
+<li><code>keep</code>: keeps x latest backups</li>
 </ul>
 
     <div class="pager">
@@ -199,7 +203,7 @@
   
 <footer class="pt-2 pb-2">
   <div class="wrap">
-    <p>&copy; <span class="year">2022</span> <a href ="https://github.com/cooperspencer" target="_blank" rel="noopener">cooperspencer</a></p>
+    <p>&copy; <span class="year">2023</span> <a href ="https://github.com/cooperspencer" target="_blank" rel="noopener">cooperspencer</a></p>
     <a href="#pagetop" id="toTop" title=Back&#32;to&#32;top></a>
   </div>
 </footer>
@@ -252,7 +256,7 @@
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="carly">
     <path d="M504.971 239.029L448 182.059V84c0-46.317-37.682-84-84-84h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c19.851 0 36 16.149 36 36v108c0 6.365 2.529 12.47 7.029 16.971L454.059 256l-47.029 47.029A24.002 24.002 0 0 0 400 320v108c0 19.851-16.149 36-36 36h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c46.318 0 84-37.683 84-84v-98.059l56.971-56.971c9.372-9.372 9.372-24.568 0-33.941zM112 192V84c0-19.851 16.149-36 36-36h44c13.255 0 24-10.745 24-24S205.255 0 192 0h-44c-46.318 0-84 37.683-84 84v98.059l-56.971 56.97c-9.373 9.373-9.373 24.568 0 33.941L64 329.941V428c0 46.317 37.682 84 84 84h44c13.255 0 24-10.745 24-24s-10.745-24-24-24h-44c-19.851 0-36-16.149-36-36V320c0-6.365-2.529-12.47-7.029-16.971L57.941 256l47.029-47.029A24.002 24.002 0 0 0 112 192z"></path>
   </symbol>
-  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="copy">
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="copy" fill="currentColor">
     <path d="M23 2.75A2.75 2.75 0 0 0 20.25 0H8.75A2.75 2.75 0 0 0 6 2.75v13.5A2.75 2.75 0 0 0 8.75 19h11.5A2.75 2.75 0 0 0 23 16.25zM18.25 14.5h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5z"></path>
     <path d="M8.75 20.5a4.255 4.255 0 0 1-4.25-4.25V2.75c0-.086.02-.166.025-.25H3.75A2.752 2.752 0 0 0 1 5.25v16A2.752 2.752 0 0 0 3.75 24h12a2.752 2.752 0 0 0 2.75-2.75v-.75z"></path>
   </symbol>
@@ -274,6 +278,6 @@
 </svg>
 
 
-<script src="https://cooperspencer.github.io/gickup-documentation/js/bundle.36a10edc6808f94b1b2add221a5c781fc9c2fd9fe8ba27343c1d704b362869842219621f2335b609bf1725d8e0ee2909ed8a486c7ec913bda94454be721add1a.js"></script>
+<script src="https://cooperspencer.github.io/gickup-documentation/js/bundle.692ceece8b9c3ecd19166617d9624d4917555d8ee59d711be4221b36e00d6d53a52b2b0b31933bcdb638beeab06f3ad135fe60867857b6fc2d9b25b25a01b506.js"></script>
 </body>
 </html>

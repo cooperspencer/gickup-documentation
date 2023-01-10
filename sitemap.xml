@@ -40,6 +40,9 @@
   </url><url>
     <loc>https://cooperspencer.github.io/gickup-documentation/docs/configuration/miscellaneous/</loc>
   </url><url>
+    <loc>https://cooperspencer.github.io/gickup-documentation/readme/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>https://cooperspencer.github.io/gickup-documentation/</loc>
   </url><url>
     <loc>https://cooperspencer.github.io/gickup-documentation/search/</loc>

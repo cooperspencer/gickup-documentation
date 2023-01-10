@@ -38,7 +38,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/local/</guid>
-      <description>1 local: 2 - path: /some/path/gickup 3 structured: true path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository </description>
+      <description>1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups </description>
     </item>
     
   </channel>
