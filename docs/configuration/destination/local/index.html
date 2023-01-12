@@ -10,18 +10,18 @@
 <link rel="shortcut icon" href='https://cooperspencer.github.io/gickup-documentation/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://cooperspencer.github.io/gickup-documentation/favicons/browserconfig.xml'>
 <title>Local | Gickup Docs</title><meta property="og:title" content="Local" />
-<meta property="og:description" content="1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups " />
+<meta property="og:description" content="1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 6 bare: true path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups bare: clones it as bare " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/local/" /><meta property="article:section" content="docs" />
 
 
 <meta itemprop="name" content="Local">
-<meta itemprop="description" content="1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups ">
+<meta itemprop="description" content="1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 6 bare: true path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups bare: clones it as bare ">
 
-<meta itemprop="wordCount" content="60">
+<meta itemprop="wordCount" content="68">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Local"/>
-<meta name="twitter:description" content="1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups "/>
+<meta name="twitter:description" content="1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 6 bare: true path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups bare: clones it as bare "/>
 
 
 <link rel="stylesheet" href="https://cooperspencer.github.io/gickup-documentation/css/styles.9693283a9fd362fc60da12d2f6cfe037a9ea6a2a9e3a7b2a1a848abdda2792b12ea4520445267d4531177b5636e96f77d71e9ea54c76f8c764369ed0c5c999a4.css" integrity="sha512-lpMoOp/TYvxg2hLS9s/gN6nqaiqeOnsqGoSKvdonkrEupFIERSZ9RTEXe1Y26W931x6epUx2&#43;MdkNp7QxcmZpA==">
@@ -29,7 +29,7 @@
 
 
 
-  <meta name="description" content="1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups ">
+  <meta name="description" content="1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 6 bare: true path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups bare: clones it as bare ">
 
 
 </head>
@@ -172,6 +172,7 @@
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">      </span><span class="nt">structured</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">      </span><span class="nt">zip</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="w">      </span><span class="nt">keep</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="w">      </span><span class="nt">bare</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span></span></span></code></pre></div><ul>
 <li><code>path</code>: path to store your backup
 
@@ -182,6 +183,7 @@
 <li><code>structured</code>: if set to <code>true</code>, it checks out the repos in a more structured way, like <code>hoster/user|organization/repository</code></li>
 <li><code>zip</code>: zips the repository</li>
 <li><code>keep</code>: keeps x latest backups</li>
+<li><code>bare</code>: clones it as bare</li>
 </ul>
 
     <div class="pager">
