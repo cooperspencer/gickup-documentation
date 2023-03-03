@@ -22,7 +22,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/github/</guid>
-      <description>1 github: 2 - token: some-token 3 token_file: token.txt 4 user: some-user 5 username: your-user 6 password: your-password 7 ssh: true 8 sshkey: /path/to/key 9 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 10 - foo 11 - bar 12 include: # this includes the repo &amp;#34;foobar&amp;#34; 13 - foobar 14 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 15 - foo 16 - bar 17 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 18 - foo1 19 - bar1 20 wiki: true 21 starred: true token: your github token.</description>
+      <description>1 github: 2 - token: some-token 3 token_file: token.txt 4 user: some-user 5 username: your-user 6 password: your-password 7 ssh: true 8 sshkey: /path/to/key 9 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 10 - foo 11 - bar 12 include: # this includes the repo &amp;#34;foobar&amp;#34; 13 - foobar 14 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 15 - foo 16 - bar 17 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 18 - foo1 19 - bar1 20 wiki: true 21 starred: true 22 filter: 23 lastactivity: 1y 24 stars: 100 25 excludearchived: true 26 languages: 27 - go 28 - whatever token: your github token.</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/gitea/</guid>
-      <description>1 gitea: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-gitea 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 21 wiki: true 22 starred: true token: your gitea token.</description>
+      <description>1 gitea: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-gitea 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 21 wiki: true 22 starred: true 23 filter: 24 lastactivity: 1y 25 stars: 100 26 excludearchived: true 27 languages: 28 - go 29 - whatever token: your gitea token.</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/gogs/</guid>
-      <description>1 gitea: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-gogs 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 21 wiki: true token: your gogs token.</description>
+      <description>1 gitea: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-gogs 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 21 wiki: true 22 filter: 23 lastactivity: 1y 24 stars: 100 token: your gogs token.</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/gitlab/</guid>
-      <description>1 gitlab: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-gitlab 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 21 wiki: true token: your gitlab token.</description>
+      <description>1 gitlab: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-gitlab 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 21 wiki: true 22 filter: 23 lastactivity: 1y 24 stars: 100 25 excludearchived: true 26 languages: 27 - go 28 - whatever token: your gitlab token.</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/bitbucket/</guid>
-      <description>1 bitbucket: 2 - url: http(s)://url-to-bitbucket 3 user: some-user 4 username: your-user 5 password: your-password 6 ssh: true 7 sshkey: /path/to/key 8 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 9 - foo 10 - bar 11 include: # this includes the repo &amp;#34;foobar&amp;#34; 12 - foobar 13 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 14 - foo 15 - bar 16 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 17 - foo1 18 - bar1 url: if empty, https://bitbucket.</description>
+      <description>1 bitbucket: 2 - url: http(s)://url-to-bitbucket 3 user: some-user 4 username: your-user 5 password: your-password 6 ssh: true 7 sshkey: /path/to/key 8 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 9 - foo 10 - bar 11 include: # this includes the repo &amp;#34;foobar&amp;#34; 12 - foobar 13 filter: 14 lastactivity: 1y url: if empty, https://bitbucket.org is used. user: the user you want to clone the repositories from. if you want to get everything from your user, leave out the user parameter and just use the token.</description>
     </item>
     
     <item>
@@ -67,7 +67,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/onedev/</guid>
-      <description>1 onedev: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-onedev 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 token: your onedev token.</description>
+      <description>1 onedev: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-onedev 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 21 filter: 22 lastactivity: 1y token: your onedev token.</description>
     </item>
     
     <item>
@@ -76,7 +76,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/sourcehut/</guid>
-      <description>1 sourcehut: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-sourcehut 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 21 wiki: true token: your onedev token.</description>
+      <description>1 sourcehut: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-sourcehut 5 user: some-user 6 username: your-user 7 password: your-password 8 ssh: true 9 sshkey: /path/to/key 10 exclude: # this excludes the repos &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 11 - foo 12 - bar 13 include: # this includes the repo &amp;#34;foobar&amp;#34; 14 - foobar 15 excludeorgs: # this excludes repos from the organizations &amp;#34;foo&amp;#34; and &amp;#34;bar&amp;#34; 16 - foo 17 - bar 18 includeorgs: # this includes repos from the organizations &amp;#34;foo1&amp;#34; and &amp;#34;bar1&amp;#34; 19 - foo1 20 - bar1 21 wiki: true 22 filter: 23 lastactivity: 1y token: your onedev token.</description>
     </item>
     
     <item>
@@ -85,8 +85,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/any/</guid>
-      <description>1 any: 2 - url: url-to-any-repo 3 username: your-user 4 password: your-password 5 ssh: true 6 sshkey: /path/to/key 7 - url: can-also-be-a-local-path-to-a-bare-repo url: can be https, http or ssh. Could also be a local bare repository
-username: user that will be used for the clone process. password: password for said user. ssh: boolean value if the clone should be done via ssh. sshkey: if empty, it uses your home directories&#39; .</description>
+      <description>1 any: 2 - token: some-token 3 token_file: token.txt 4 url: url-to-any-repo 5 username: your-user 6 password: your-password 7 ssh: true 8 sshkey: /path/to/key 9 - url: can-also-be-a-local-path-to-a-bare-repo token: Token of the hoster. It can also be an environment variable. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: can be https, http or ssh. Could also be a local bare repository username: user that will be used for the clone process.</description>
     </item>
     
     <item>
@@ -123,15 +122,6 @@ username: user that will be used for the clone process. password: password for s
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/local/</guid>
       <description>1 local: 2 - path: /some/path/gickup 3 structured: true 4 zip: true 5 keep: 5 6 bare: true path: path to store your backup If you use Docker, don&#39;t forget to mount the path of your backup! structured: if set to true, it checks out the repos in a more structured way, like hoster/user|organization/repository zip: zips the repository keep: keeps x latest backups bare: clones it as bare </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://cooperspencer.github.io/gickup-documentation/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cooperspencer.github.io/gickup-documentation/readme/</guid>
-      <description>gickup-documentation </description>
     </item>
     
     <item>

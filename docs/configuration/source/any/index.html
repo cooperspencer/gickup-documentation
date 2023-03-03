@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="dark">
 <head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.109.0">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.110.0">
 <link rel="apple-touch-icon" sizes="180x180" href='https://cooperspencer.github.io/gickup-documentation/favicons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://cooperspencer.github.io/gickup-documentation/favicons/favicon-32x32.png'>
 <link rel="icon" type="image/png" sizes="16x16" href='https://cooperspencer.github.io/gickup-documentation/favicons/favicon-16x16.png'>
@@ -10,21 +10,18 @@
 <link rel="shortcut icon" href='https://cooperspencer.github.io/gickup-documentation/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://cooperspencer.github.io/gickup-documentation/favicons/browserconfig.xml'>
 <title>Any | Gickup Docs</title><meta property="og:title" content="Any" />
-<meta property="og:description" content="1 any: 2 - url: url-to-any-repo 3 username: your-user 4 password: your-password 5 ssh: true 6 sshkey: /path/to/key 7 - url: can-also-be-a-local-path-to-a-bare-repo url: can be https, http or ssh. Could also be a local bare repository
-username: user that will be used for the clone process. password: password for said user. ssh: boolean value if the clone should be done via ssh. sshkey: if empty, it uses your home directories&#39; ." />
+<meta property="og:description" content="1 any: 2 - token: some-token 3 token_file: token.txt 4 url: url-to-any-repo 5 username: your-user 6 password: your-password 7 ssh: true 8 sshkey: /path/to/key 9 - url: can-also-be-a-local-path-to-a-bare-repo token: Token of the hoster. It can also be an environment variable. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: can be https, http or ssh. Could also be a local bare repository username: user that will be used for the clone process." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cooperspencer.github.io/gickup-documentation/docs/configuration/source/any/" /><meta property="article:section" content="docs" />
 
 
 <meta itemprop="name" content="Any">
-<meta itemprop="description" content="1 any: 2 - url: url-to-any-repo 3 username: your-user 4 password: your-password 5 ssh: true 6 sshkey: /path/to/key 7 - url: can-also-be-a-local-path-to-a-bare-repo url: can be https, http or ssh. Could also be a local bare repository
-username: user that will be used for the clone process. password: password for said user. ssh: boolean value if the clone should be done via ssh. sshkey: if empty, it uses your home directories&#39; .">
+<meta itemprop="description" content="1 any: 2 - token: some-token 3 token_file: token.txt 4 url: url-to-any-repo 5 username: your-user 6 password: your-password 7 ssh: true 8 sshkey: /path/to/key 9 - url: can-also-be-a-local-path-to-a-bare-repo token: Token of the hoster. It can also be an environment variable. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: can be https, http or ssh. Could also be a local bare repository username: user that will be used for the clone process.">
 
-<meta itemprop="wordCount" content="71">
+<meta itemprop="wordCount" content="104">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Any"/>
-<meta name="twitter:description" content="1 any: 2 - url: url-to-any-repo 3 username: your-user 4 password: your-password 5 ssh: true 6 sshkey: /path/to/key 7 - url: can-also-be-a-local-path-to-a-bare-repo url: can be https, http or ssh. Could also be a local bare repository
-username: user that will be used for the clone process. password: password for said user. ssh: boolean value if the clone should be done via ssh. sshkey: if empty, it uses your home directories&#39; ."/>
+<meta name="twitter:description" content="1 any: 2 - token: some-token 3 token_file: token.txt 4 url: url-to-any-repo 5 username: your-user 6 password: your-password 7 ssh: true 8 sshkey: /path/to/key 9 - url: can-also-be-a-local-path-to-a-bare-repo token: Token of the hoster. It can also be an environment variable. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: can be https, http or ssh. Could also be a local bare repository username: user that will be used for the clone process."/>
 
 
 <link rel="stylesheet" href="https://cooperspencer.github.io/gickup-documentation/css/styles.9693283a9fd362fc60da12d2f6cfe037a9ea6a2a9e3a7b2a1a848abdda2792b12ea4520445267d4531177b5636e96f77d71e9ea54c76f8c764369ed0c5c999a4.css" integrity="sha512-lpMoOp/TYvxg2hLS9s/gN6nqaiqeOnsqGoSKvdonkrEupFIERSZ9RTEXe1Y26W931x6epUx2&#43;MdkNp7QxcmZpA==">
@@ -32,8 +29,7 @@ username: user that will be used for the clone process. password: password for s
 
 
 
-  <meta name="description" content="1 any: 2 - url: url-to-any-repo 3 username: your-user 4 password: your-password 5 ssh: true 6 sshkey: /path/to/key 7 - url: can-also-be-a-local-path-to-a-bare-repo url: can be https, http or ssh. Could also be a local bare repository
-username: user that will be used for the clone process. password: password for said user. ssh: boolean value if the clone should be done via ssh. sshkey: if empty, it uses your home directories&#39; .">
+  <meta name="description" content="1 any: 2 - token: some-token 3 token_file: token.txt 4 url: url-to-any-repo 5 username: your-user 6 password: your-password 7 ssh: true 8 sshkey: /path/to/key 9 - url: can-also-be-a-local-path-to-a-bare-repo token: Token of the hoster. It can also be an environment variable. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: can be https, http or ssh. Could also be a local bare repository username: user that will be used for the clone process.">
 
 
 </head>
@@ -172,14 +168,18 @@ username: user that will be used for the clone process. password: password for s
 
   <main class="content">
     <h1>Any</h1><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="w">  </span><span class="nt">any</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">    </span>- <span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">url-to-any-repo </span><span class="w">
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">      </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l">your-user </span><span class="w">
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">      </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l">your-password</span><span class="w">
-</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="w">      </span><span class="nt">ssh</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> 
-</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="w">      </span><span class="nt">sshkey</span><span class="p">:</span><span class="w"> </span><span class="l">/path/to/key</span><span class="w">
-</span></span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="w">    </span>- <span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">can-also-be-a-local-path-to-a-bare-repo</span><span class="w">
-</span></span></span></code></pre></div><p><code>url</code>: can be https, http or ssh. Could also be a local bare repository</p>
-<ul>
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">    </span>- <span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="l">some-token</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">      </span><span class="nt">token_file</span><span class="p">:</span><span class="w"> </span><span class="l">token.txt</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">url-to-any-repo </span><span class="w">
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="w">      </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l">your-user </span><span class="w">
+</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="w">      </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l">your-password</span><span class="w">
+</span></span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="w">      </span><span class="nt">ssh</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> 
+</span></span></span><span class="line"><span class="ln">8</span><span class="cl"><span class="w">      </span><span class="nt">sshkey</span><span class="p">:</span><span class="w"> </span><span class="l">/path/to/key</span><span class="w">
+</span></span></span><span class="line"><span class="ln">9</span><span class="cl"><span class="w">    </span>- <span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">can-also-be-a-local-path-to-a-bare-repo</span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li><code>token</code>: Token of the hoster. It can also be an environment variable.</li>
+<li><code>token_file</code>: alternatively, specify the token in a file, relative to current working directory when executed.</li>
+<li><code>url</code>: can be https, http or ssh. Could also be a local bare repository</li>
 <li><code>username</code>: user that will be used for the clone process.</li>
 <li><code>password</code>: password for said user.</li>
 <li><code>ssh</code>: boolean value if the clone should be done via ssh.</li>
