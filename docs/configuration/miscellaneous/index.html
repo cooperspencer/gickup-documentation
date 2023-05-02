@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="dark">
 <head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.110.0">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.111.3">
 <link rel="apple-touch-icon" sizes="180x180" href='https://cooperspencer.github.io/gickup-documentation/favicons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://cooperspencer.github.io/gickup-documentation/favicons/favicon-32x32.png'>
 <link rel="icon" type="image/png" sizes="16x16" href='https://cooperspencer.github.io/gickup-documentation/favicons/favicon-16x16.png'>
@@ -178,6 +178,15 @@
 </span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">    </span><span class="nt">urls</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">      </span>- <span class="l">http(s)://url-to-make-request-to</span><span class="w">
 </span></span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="w">      </span>- <span class="l">http(s)://another-url-to-make-request-to</span><span class="w">
+</span></span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="w">    </span><span class="nt">ntfy</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="w">    </span>- <span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">http(s)://url-to-ntfy/your-topic</span><span class="w">
+</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="w">      </span><span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="l">your-token </span><span class="w">
+</span></span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="w">      </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="l">your-user</span><span class="w">
+</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="w">      </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l">your-password</span><span class="w">
+</span></span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="w">    </span><span class="nt">gotify</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="w">    </span>- <span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">http(s)://url-to-gotify</span><span class="w">
+</span></span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="w">      </span><span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="l">your-token</span><span class="w">
 </span></span></span></code></pre></div><ul>
 <li><code>cron</code>: you can add a cron expression to run gickup more than once. You can create and test the expression on <a href="https://crontab.guru/">https://crontab.guru/</a>.
 
@@ -208,6 +217,29 @@
 <li><code>heartbeat</code>: send <code>GET</code> requests to monitoring services like <a href="https://healthchecks.io/">https://healthchecks.io/</a> or <a href="https://deadmanssnitch.com/">https://deadmanssnitch.com/</a>.
 <ul>
 <li><code>urls</code>: list of urls.</li>
+</ul>
+</li>
+<li><code>push</code>: you can configure pushgateways to get notifications on your phone/browser
+<ul>
+<li><code>ntfy</code>: <a href="%22https://ntfy.sh/%22">ntfy</a>. a list with the following parameters
+<ul>
+<li><code>url</code>: url to your ntfy</li>
+<li><code>token</code>: token of ntfy, can be an environment variable</li>
+<li><code>user</code>: your ntfy user</li>
+<li><code>password</code>: your ntfly password
+
+<div class="tip">
+  if <code>token</code> is set, <code>user</code> and <code>password</code> are not used.
+</div>
+</li>
+</ul>
+</li>
+<li><code>gotify</code>: <a href="%22https://gotify.net/%22">gotify</a>. a list with the following parameters
+<ul>
+<li><code>url</code>: url to your gotify</li>
+<li><code>token</code>: token of gotify, can be an environment variable</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
