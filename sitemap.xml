@@ -36,9 +36,15 @@
   </url><url>
     <loc>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/gitlab/</loc>
   </url><url>
-    <loc>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/local/</loc>
+    <loc>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/github/</loc>
+  </url><url>
+    <loc>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/sourcehut/</loc>
+  </url><url>
+    <loc>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/onedev/</loc>
   </url><url>
     <loc>https://cooperspencer.github.io/gickup-documentation/docs/configuration/miscellaneous/</loc>
+  </url><url>
+    <loc>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/local/</loc>
   </url><url>
     <loc>https://cooperspencer.github.io/gickup-documentation/</loc>
   </url><url>
