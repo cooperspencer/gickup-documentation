@@ -95,7 +95,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/gitea/</guid>
-      <description>1 gitea: 2 - token: some-token 3 token_file: token.txt 4 user: some-nome 5 url: http(s)://url-to-gitea 6 createorg: true 7 visibility: 8 repositories: private 9 organizations: private token: your gitea token. You don&#39;t need one, if you backup only public repositories. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://gitea.com is used. user: the user/org you want to mirror the repositories to.</description>
+      <description>1 gitea: 2 - token: some-token 3 token_file: token.txt 4 user: some-name 5 url: http(s)://url-to-gitea 6 createorg: true 7 visibility: 8 repositories: private 9 organizations: private token: your gitea token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://gitea.com is used. user: the user/org you want to mirror the repositories to. createorg: if activated, it will create the value in user as organization if it doesn&#39;t exist on the system.</description>
     </item>
     
     <item>
@@ -104,7 +104,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/gogs/</guid>
-      <description>1 gogs: 2 - token: some-token 3 token_file: token.txt 4 user: some-nome 5 url: http(s)://url-to-gogs 6 createorg: true 7 visibility: 8 repositories: private token: your gogs token. You don&#39;t need one, if you backup only public repositories. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: there is no default value. user: the user/org you want to mirror the repositories to. createorg: if activated, it will create the value in user as organization if it doesn&#39;t exist on the system.</description>
+      <description>1 gogs: 2 - token: some-token 3 token_file: token.txt 4 user: some-name 5 url: http(s)://url-to-gogs 6 createorg: true 7 visibility: 8 repositories: private token: your gogs token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: there is no default value. user: the user/org you want to mirror the repositories to. createorg: if activated, it will create the value in user as organization if it doesn&#39;t exist on the system.</description>
     </item>
     
     <item>
@@ -113,7 +113,34 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/gitlab/</guid>
-      <description>1 gitlab: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-gitlab token: your gitlab token. You don&#39;t need one, if you backup only public repositories. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://gitlab.com is used. A backup to Gitlab works in general. With the community edition, it just migrates the repository to Gitlab. Mirroring is only supported in the Enterprise Edition.</description>
+      <description>1 gitlab: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-gitlab token: your gitlab token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://gitlab.com is used. A backup to Gitlab works in general. With the community edition, it just migrates the repository to Gitlab. Mirroring is only supported in the Enterprise Edition. I have no access to an Enterprise Edition, therefore I can&#39;t test it properly.</description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/github/</guid>
+      <description>1 github: 2 - token: some-token 3 token_file: token.txt 4 visibility: 5 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. visibility: set the visibility of created organizations and repositories repositories: can be private or public, default is private </description>
+    </item>
+    
+    <item>
+      <title>Sourcehut</title>
+      <link>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/sourcehut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/sourcehut/</guid>
+      <description>1 sourcehut: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-sourcehut 5 sshkey: /path/to/key 6 visibility: 7 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://git.sr.ht is used. Sourcehut uses SSH to manage write access for repositories, so you need to employ an SSH key to mirror a repository. sshkey: if empty, it uses your home directories&#39; .</description>
+    </item>
+    
+    <item>
+      <title>Onedev</title>
+      <link>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/onedev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/onedev/</guid>
+      <description>1 onedev: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-onedev token: your onedev token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://code.onedev.io is used. </description>
     </item>
     
     <item>
