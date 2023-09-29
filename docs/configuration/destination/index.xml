@@ -48,7 +48,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/sourcehut/</guid>
-      <description>1 sourcehut: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-sourcehut 5 sshkey: /path/to/key 6 visibility: 7 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://git.sr.ht is used. Sourcehut uses SSH to manage write access for repositories, so you need to employ an SSH key to mirror a repository. sshkey: if empty, it uses your home directories&#39; .</description>
+      <description>1 sourcehut: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-sourcehut 5 sshkey: /path/to/key 6 force: true 7 visibility: 8 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://git.sr.ht is used. Sourcehut uses SSH to manage write access for repositories, so you need to employ an SSH key to mirror a repository. sshkey: if empty, it uses your home directories&#39; .</description>
     </item>
     
     <item>
