@@ -10,18 +10,18 @@
 <link rel="shortcut icon" href='https://cooperspencer.github.io/gickup-documentation/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://cooperspencer.github.io/gickup-documentation/favicons/browserconfig.xml'>
 <title>Github | Gickup Docs</title><meta property="og:title" content="Github" />
-<meta property="og:description" content="1 github: 2 - token: some-token 3 token_file: token.txt 4 organization: myorg 5 visibility: 6 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. visibility: set the visibility of created organizations and repositories. repositories: can be private or public, default is private. organization: name of the organization you want to backup to. " />
+<meta property="og:description" content="1 github: 2 - token: some-token 3 token_file: token.txt 4 organization: myorg 5 force: true 6 visibility: 7 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. organization: name of the organization you want to backup to. force: enable force push. visibility: set the visibility of created organizations and repositories. repositories: can be private or public, default is private." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/github/" /><meta property="article:section" content="docs" />
 
 
 <meta itemprop="name" content="Github">
-<meta itemprop="description" content="1 github: 2 - token: some-token 3 token_file: token.txt 4 organization: myorg 5 visibility: 6 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. visibility: set the visibility of created organizations and repositories. repositories: can be private or public, default is private. organization: name of the organization you want to backup to. ">
+<meta itemprop="description" content="1 github: 2 - token: some-token 3 token_file: token.txt 4 organization: myorg 5 force: true 6 visibility: 7 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. organization: name of the organization you want to backup to. force: enable force push. visibility: set the visibility of created organizations and repositories. repositories: can be private or public, default is private.">
 
-<meta itemprop="wordCount" content="64">
+<meta itemprop="wordCount" content="71">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Github"/>
-<meta name="twitter:description" content="1 github: 2 - token: some-token 3 token_file: token.txt 4 organization: myorg 5 visibility: 6 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. visibility: set the visibility of created organizations and repositories. repositories: can be private or public, default is private. organization: name of the organization you want to backup to. "/>
+<meta name="twitter:description" content="1 github: 2 - token: some-token 3 token_file: token.txt 4 organization: myorg 5 force: true 6 visibility: 7 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. organization: name of the organization you want to backup to. force: enable force push. visibility: set the visibility of created organizations and repositories. repositories: can be private or public, default is private."/>
 
 
 <link rel="stylesheet" href="https://cooperspencer.github.io/gickup-documentation/css/styles.9693283a9fd362fc60da12d2f6cfe037a9ea6a2a9e3a7b2a1a848abdda2792b12ea4520445267d4531177b5636e96f77d71e9ea54c76f8c764369ed0c5c999a4.css" integrity="sha512-lpMoOp/TYvxg2hLS9s/gN6nqaiqeOnsqGoSKvdonkrEupFIERSZ9RTEXe1Y26W931x6epUx2&#43;MdkNp7QxcmZpA==">
@@ -29,7 +29,7 @@
 
 
 
-  <meta name="description" content="1 github: 2 - token: some-token 3 token_file: token.txt 4 organization: myorg 5 visibility: 6 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. visibility: set the visibility of created organizations and repositories. repositories: can be private or public, default is private. organization: name of the organization you want to backup to. ">
+  <meta name="description" content="1 github: 2 - token: some-token 3 token_file: token.txt 4 organization: myorg 5 force: true 6 visibility: 7 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. organization: name of the organization you want to backup to. force: enable force push. visibility: set the visibility of created organizations and repositories. repositories: can be private or public, default is private.">
 
 
 </head>
@@ -174,17 +174,19 @@
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">    </span>- <span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="l">some-token</span><span class="w">
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">      </span><span class="nt">token_file</span><span class="p">:</span><span class="w"> </span><span class="l">token.txt</span><span class="w">
 </span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w">      </span><span class="nt">organization</span><span class="p">:</span><span class="w"> </span><span class="l">myorg</span><span class="w">
-</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="w">      </span><span class="nt">visibility</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="w">        </span><span class="nt">repositories</span><span class="p">:</span><span class="w"> </span><span class="l">private</span><span class="w">
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="w">      </span><span class="nt">force</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="w">      </span><span class="nt">visibility</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="w">        </span><span class="nt">repositories</span><span class="p">:</span><span class="w"> </span><span class="l">private</span><span class="w">
 </span></span></span></code></pre></div><ul>
 <li><code>token</code>: your github token.</li>
 <li><code>token_file</code>: alternatively, specify the token in a file, relative to current working directory when executed.</li>
+<li><code>organization</code>: name of the organization you want to backup to.</li>
+<li><code>force</code>: enable force push.</li>
 <li><code>visibility</code>: set the visibility of created organizations and repositories.
 <ul>
 <li><code>repositories</code>: can be <code>private</code> or <code>public</code>, default is <code>private</code>.</li>
 </ul>
 </li>
-<li><code>organization</code>: name of the organization you want to backup to.</li>
 </ul>
 
     <div class="pager">

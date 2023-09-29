@@ -39,7 +39,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/github/</guid>
-      <description>1 github: 2 - token: some-token 3 token_file: token.txt 4 organization: myorg 5 visibility: 6 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. visibility: set the visibility of created organizations and repositories. repositories: can be private or public, default is private. organization: name of the organization you want to backup to. </description>
+      <description>1 github: 2 - token: some-token 3 token_file: token.txt 4 organization: myorg 5 force: true 6 visibility: 7 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. organization: name of the organization you want to backup to. force: enable force push. visibility: set the visibility of created organizations and repositories. repositories: can be private or public, default is private.</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/onedev/</guid>
-      <description>1 onedev: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-onedev 5 organization: myorg token: your onedev token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://code.onedev.io is used. organization: name of the parent repository you want to backup to. </description>
+      <description>1 onedev: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-onedev 5 organization: myorg 6 force: true token: your onedev token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://code.onedev.io is used. organization: name of the parent repository you want to backup to. force: enable force push. </description>
     </item>
     
     <item>
