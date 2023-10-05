@@ -95,7 +95,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/gitea/</guid>
-      <description>1 gitea: 2 - token: some-token 3 token_file: token.txt 4 user: some-name 5 url: http(s)://url-to-gitea 6 createorg: true 7 visibility: 8 repositories: private 9 organizations: private token: your gitea token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://gitea.com is used. user: the user/org you want to mirror the repositories to. createorg: if activated, it will create the value in user as organization if it doesn&#39;t exist on the system.</description>
+      <description>1 gitea: 2 - token: some-token 3 token_file: token.txt 4 user: some-name 5 url: http(s)://url-to-gitea 6 createorg: true 7 lfs: true 8 mirrorinterval: 1h 9 visibility: 10 repositories: private 11 organizations: private token: your gitea token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://gitea.com is used. user: the user/org you want to mirror the repositories to. createorg: if activated, it will create the value in user as organization if it doesn&#39;t exist on the system.</description>
     </item>
     
     <item>
@@ -122,7 +122,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/github/</guid>
-      <description>1 github: 2 - token: some-token 3 token_file: token.txt 4 organization: myorg 5 visibility: 6 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. visibility: set the visibility of created organizations and repositories. repositories: can be private or public, default is private. organization: name of the organization you want to backup to. </description>
+      <description>1 github: 2 - token: some-token 3 token_file: token.txt 4 organization: myorg 5 force: true 6 visibility: 7 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. organization: name of the organization you want to backup to. force: enable force push. visibility: set the visibility of created organizations and repositories. repositories: can be private or public, default is private.</description>
     </item>
     
     <item>
@@ -131,7 +131,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/sourcehut/</guid>
-      <description>1 sourcehut: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-sourcehut 5 sshkey: /path/to/key 6 visibility: 7 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://git.sr.ht is used. Sourcehut uses SSH to manage write access for repositories, so you need to employ an SSH key to mirror a repository. sshkey: if empty, it uses your home directories&#39; .</description>
+      <description>1 sourcehut: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-sourcehut 5 sshkey: /path/to/key 6 force: true 7 visibility: 8 repositories: private token: your github token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://git.sr.ht is used. Sourcehut uses SSH to manage write access for repositories, so you need to employ an SSH key to mirror a repository. sshkey: if empty, it uses your home directories&#39; .</description>
     </item>
     
     <item>
@@ -140,7 +140,7 @@ Pure Docker 1docker pull buddyspencer/gickup 2docker run -d -v /path/to/conf.yml
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cooperspencer.github.io/gickup-documentation/docs/configuration/destination/onedev/</guid>
-      <description>1 onedev: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-onedev 5 organization: myorg token: your onedev token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://code.onedev.io is used. organization: name of the parent repository you want to backup to. </description>
+      <description>1 onedev: 2 - token: some-token 3 token_file: token.txt 4 url: http(s)://url-to-onedev 5 organization: myorg 6 force: true token: your onedev token. token_file: alternatively, specify the token in a file, relative to current working directory when executed. url: if empty, https://code.onedev.io is used. organization: name of the parent repository you want to backup to. force: enable force push. </description>
     </item>
     
     <item>
