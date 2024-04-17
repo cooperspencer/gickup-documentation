@@ -1,0 +1,8 @@
+{
+  "label": "Destination",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Configuration for all git hoster destination endpoints."
+  }
+}
