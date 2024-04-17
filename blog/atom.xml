@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://cooperspencer.github.io/gickup-documentation/blog</id>
+    <title>Gickup Blog</title>
+    <updated>2024-04-17T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://cooperspencer.github.io/gickup-documentation/blog"/>
+    <subtitle>Gickup Blog</subtitle>
+    <icon>https://cooperspencer.github.io/gickup-documentation/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome]]></title>
+        <id>https://cooperspencer.github.io/gickup-documentation/blog/welcome</id>
+        <link href="https://cooperspencer.github.io/gickup-documentation/blog/welcome"/>
+        <updated>2024-04-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Blogging is quite new for me, but I will try my best to post regular updates and ideas for Gickup.]]></summary>
+        <content type="html"><![CDATA[<p>Blogging is quite new for me, but I will try my best to post regular updates and ideas for Gickup.</p>]]></content>
+        <author>
+            <name>Andreas Wachter</name>
+            <uri>https://github.com/cooperspencer</uri>
+        </author>
+        <category label="gickup" term="gickup"/>
+        <category label="hello" term="hello"/>
+    </entry>
+</feed>
