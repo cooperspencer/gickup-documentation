@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgickup_docusaurus=self.webpackChunkgickup_docusaurus||[]).push([[8117],{4570:u=>{u.exports=JSON.parse('{"label":"codeberg","permalink":"/gickup-documentation/blog/tags/codeberg","allTagsPath":"/gickup-documentation/blog/tags","count":1,"unlisted":false}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgickup_docusaurus=self.webpackChunkgickup_docusaurus||[]).push([[6170],{8150:u=>{u.exports=JSON.parse('{"label":"gickup","permalink":"/gickup-documentation/blog/tags/gickup","allTagsPath":"/gickup-documentation/blog/tags","count":1,"unlisted":false}')}}]);
