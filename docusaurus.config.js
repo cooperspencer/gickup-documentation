@@ -45,14 +45,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/cooperspencer/gickup-documentation',
+            'https://github.com/cooperspencer/gickup-documentation/blob/main/docs/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/cooperspencer/gickup-documentation',
+            'https://github.com/cooperspencer/gickup-documentation/blob/main/blog/',
         },
         theme: {
           customCss: './src/css/custom.css',
