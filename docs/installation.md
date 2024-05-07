@@ -28,8 +28,8 @@ You can grab the latest version of gickup from [Github](https://github.com/coope
 ## Pure Docker
 
 ```bash
-docker pull buddyspencer/gickup
-docker run -d -v /path/to/conf.yml:/gickup/conf.yml buddyspencer/gickup
+docker pull buddyspencer/gickup # or ghcr.io/cooperspencer/gickup
+docker run -d -v /path/to/conf.yml:/gickup/conf.yml buddyspencer/gickup # or ghcr.io/cooperspencer/gickup
 ```
 
 ## Docker Compose
