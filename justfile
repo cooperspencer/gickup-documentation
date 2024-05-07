@@ -1,4 +1,4 @@
 run:
-    npx start docusaurus
+    npx docusaurus start
 deploy:
     USE_SSH=true yarn deploy
