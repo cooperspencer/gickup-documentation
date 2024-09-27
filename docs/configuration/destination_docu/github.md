@@ -5,6 +5,7 @@ sidebar_position: 2
 # Github
 
 ```yaml title="config"
+destination:
   github:
     - token: some-token
       token_file: token.txt

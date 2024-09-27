@@ -5,6 +5,7 @@ sidebar_position: 3
 # Gitea
 
 ```yaml title='config'
+source:
   gitea:
     - token: some-token
       token_file: token.txt

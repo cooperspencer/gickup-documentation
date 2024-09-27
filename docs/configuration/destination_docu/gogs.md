@@ -5,6 +5,7 @@ sidebar_position: 5
 # Gogs
 
 ```yaml title="config"
+destination:
   gogs:
     - token: some-token
       token_file: token.txt

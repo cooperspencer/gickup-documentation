@@ -5,6 +5,7 @@ sidebar_position: 6
 # Bitbucket
 
 ```yaml title="config"
+source:
   bitbucket:
     - url: http(s)://url-to-bitbucket
       user: some-user
