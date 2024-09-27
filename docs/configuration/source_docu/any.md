@@ -5,6 +5,7 @@ sidebar_position: 7
 # Any
 
 ```yaml title="config"
+source:
   any:
     - token: some-token
       token_file: token.txt

@@ -5,6 +5,7 @@ sidebar_position: 0
 # Local
 
 ```yaml title="config"
+destination:
   local:
     - path: /some/path/gickup
       structured: true

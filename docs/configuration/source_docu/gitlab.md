@@ -5,6 +5,7 @@ sidebar_position: 2
 # Gitlab
 
 ```yaml title="config"
+source:
   gitlab:
     - token: some-token
       token_file: token.txt

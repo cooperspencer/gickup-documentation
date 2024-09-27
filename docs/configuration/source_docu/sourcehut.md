@@ -5,6 +5,7 @@ sidebar_position: 5
 # Sourcehut
 
 ```yaml title="config"
+source:
   sourcehut:
     - token: some-token
       token_file: token.txt

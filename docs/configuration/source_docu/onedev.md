@@ -5,6 +5,7 @@ sidebar_position: 4
 # Onedev
 
 ```yaml title="config"
+source:
   onedev:
     - token: some-token
       token_file: token.txt
