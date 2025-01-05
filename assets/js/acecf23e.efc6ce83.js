@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgickup_docusaurus=self.webpackChunkgickup_docusaurus||[]).push([[1903],{1912:u=>{u.exports=JSON.parse('{"blogBasePath":"/gickup-documentation/blog","blogTitle":"Blog"}')}}]);

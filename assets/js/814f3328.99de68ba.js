@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgickup_docusaurus=self.webpackChunkgickup_docusaurus||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Mirror to Codeberg","permalink":"/gickup-documentation/blog/codeberg-mirror","unlisted":false},{"title":"Welcome","permalink":"/gickup-documentation/blog/welcome","unlisted":false}]}')}}]);
