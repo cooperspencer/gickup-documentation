@@ -1,5 +1,5 @@
 # Stage 1: Build the Docusaurus static site
-FROM node:alpine AS docusaurus
+FROM node:bookworm AS docusaurus
 
 WORKDIR /project
 
