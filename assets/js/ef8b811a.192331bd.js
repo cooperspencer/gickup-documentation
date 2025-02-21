@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgickup_docusaurus=self.webpackChunkgickup_docusaurus||[]).push([[8947],{6600:e=>{e.exports=JSON.parse('{"authors":[{"name":"Andreas Wachter","title":"Developer of Gickup","url":"https://github.com/cooperspencer","imageURL":"https://github.com/cooperspencer.png","key":"cooperspencer","page":null,"count":2}]}')}}]);
