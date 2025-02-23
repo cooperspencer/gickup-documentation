@@ -8,6 +8,20 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  plugins: [
+    // ... other plugins ...
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        // Plugin options
+        indexDocs: true,
+        indexPages: true,
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 10,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
   title: 'Gickup',
   tagline: 'Backup all your repositories with Ease.',
   favicon: 'img/favicon.ico',
