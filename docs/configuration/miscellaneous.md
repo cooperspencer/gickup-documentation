@@ -33,6 +33,13 @@ metrics:
     gotify:
     - url: http(s)://url-to-gotify
       token: your-token
+    apprise:
+    - url: http(s)://url-to-apprise
+      config: your-config-id
+      notification_urls:
+        - urls-to-notify(https://github.com/caronc/apprise/wiki)
+      tags:
+        - your-tag
 ```
 - `cron`: you can add a cron expression to run gickup more than once. You can create and test the expression on https://crontab.guru/.
 :::tip
@@ -44,6 +51,9 @@ If gickup runs in Docker, you might want to set the timezone for your container.
         - `dir`: where to store your log.
         - `file`: in which file to store your log.
         - `maxage`: automatically cleanup files older than X days.
+:::tip
+if `token` is set, `user` and `password` are not used.
+:::
 - `metrics`: everything related to metrics.
     - `prometheus`: enable prometheus metrics.
         - `endpoint`: by default it is `/metrics`, but set it to whatever you prefer.
@@ -56,9 +66,12 @@ If gickup runs in Docker, you might want to set the timezone for your container.
           - `token`: token of ntfy, can be an environment variable 
           - `user`: your ntfy user
           - `password`: your ntfly password
-:::tip
-if `token` is set, `user` and `password` are not used.
-:::
         - `gotify`: [gotify](https://gotify.net/). a list with the following parameters
           - `url`: url to your gotify
           - `token`: token of gotify, can be an environment variable
+        - `apprise`: [apprise](https://github.com/caronc/apprise)
+          - `url`: url to your apprise
+          - `config`: the id of your configuration in apprise
+          - `tags`: tags that you defined in your configuration in apprise.
+          - `notification_urls`: if you don't use configuration, you can add urls to notify directly here. [notification services](https://github.com/caronc/apprise/wiki)
+        
