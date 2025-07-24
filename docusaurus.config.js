@@ -8,15 +8,29 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  plugins: [
+    // ... other plugins ...
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        // Plugin options
+        indexDocs: true,
+        indexPages: true,
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 10,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
   title: 'Gickup',
   tagline: 'Backup all your repositories with Ease.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://cooperspencer.github.io/',
+  url: 'https://gickup.dev/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/gickup-documentation/',
+  baseUrl: '',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
