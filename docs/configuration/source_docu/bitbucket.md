@@ -28,6 +28,7 @@ source:
         - bar1
       filter:
         lastactivity: 1y
+        excludeforks: true
 ```
 - `url`: if empty, https://bitbucket.org is used.
 - `user`: the user you want to clone the repositories from.
@@ -52,3 +53,4 @@ for the clone process, either use:
 - `includeorgs`: only clone those specific workspace repositories.
 - `filter`:
   - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)
+  - `excludeforks`: do not clone forked repos

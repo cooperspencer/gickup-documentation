@@ -30,6 +30,7 @@ metrics:
       token: your-token 
       user: your-user
       password: your-password
+      email: your-email@example.com
     gotify:
     - url: http(s)://url-to-gotify
       token: your-token
@@ -65,7 +66,8 @@ if `token` is set, `user` and `password` are not used.
           - `url`: url to your ntfy
           - `token`: token of ntfy, can be an environment variable 
           - `user`: your ntfy user
-          - `password`: your ntfly password
+          - `password`: your ntfy password
+          - `email`: optional email address passed as the `Email` header for ntfy mail delivery
         - `gotify`: [gotify](https://gotify.net/). a list with the following parameters
           - `url`: url to your gotify
           - `token`: token of gotify, can be an environment variable
