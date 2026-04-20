@@ -8,11 +8,13 @@ title: Gickup
 
 Gickup is written in [go](https://go.dev/).
 
-It is not necessary to have git installed on your system.
-You can backup all your or favorite repositories from:
+It is not necessary to have git installed on your system.  
+You can back up all your favorite repositories from:
+
 - [Github](https://github.com/)
 - [Gitea](https://gitea.io/en-us/)
 - [Gogs](https://gogs.io/)
+- [Forgejo/Codeberg](https://forgejo.org/)
 - [Gitlab](https://about.gitlab.com/)
 - [Bitbucket](https://bitbucket.org)
 - [Onedev](https://code.onedev.io/)
