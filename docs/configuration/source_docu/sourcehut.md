@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Sourcehut
+# SourceHut
 
 ```yaml title="config"
 source:
@@ -30,7 +30,7 @@ source:
       filter:
         lastactivity: 1y
 ```
-- `token`: your sourcehut token. You don't need one, if you backup only public repositories. It can also be an environment variable.
+- `token`: your SourceHut OAuth token, sent as a bearer token. You don't need one if you back up only public repositories. It can also be an environment variable.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `url`: if empty, https://git.sr.ht is used.
 - `user`: the user you want to clone the repositories from.

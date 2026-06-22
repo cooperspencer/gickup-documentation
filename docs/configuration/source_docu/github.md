@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Github
+# GitHub
 
 ```yaml title="config"
 source:
@@ -37,9 +37,14 @@ source:
         languages:
           - go
           - whatever
+    - app_id: 123456
+      app_installation_id: 78901234
+      app_private_key_file: /path/to/private.pem
+      user: some-user
+      ssh: false
 ```
 
-- `token`: your github token. You don't need one, if you backup only public repositories, although it is possible to hit the limit for the Github-API. It can also be an environment variable.
+- `token`: your GitHub token. You don't need one if you back up only public repositories, although it is possible to hit the GitHub API limit. It can also be an environment variable.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `user`: the user you want to clone the repositories from.
 :::tip
@@ -62,8 +67,14 @@ for the clone process, either use:
 - `includeorgs`: only clone those specific organizations repositories.
 - `wiki`: also clone the wikis of the repositories.
 - `starred`: also clone the starred repositories of the `user`.
-- `issues`: creates a backup of the issues of the repositorie. works only with a local destination.
+- `issues`: creates a backup of the issues of the repository. Works only with a local destination.
 - `gists`: also clone the gists of the `user`.
+- `app_id`: GitHub App ID. Use it with `app_installation_id` and `app_private_key_file` to authenticate as a GitHub App instead of using `token`.
+- `app_installation_id`: installation ID of the GitHub App on the target account or organization.
+- `app_private_key_file`: path to the GitHub App RSA private key PEM file.
+:::warning
+Contributed repositories are not supported with GitHub App authentication.
+:::
 - `filter`:
   - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)
   - `stars`: clone repos with at least x stars.

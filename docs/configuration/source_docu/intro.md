@@ -5,11 +5,12 @@ sidebar_position: 0
 # Intro
 
 Gickup supports various code hosters:
-- [Github](https://github.com/)
+- [GitHub](https://github.com/)
 - [Gitea](https://gitea.io/en-us/)
 - [Gogs](https://gogs.io/)
-- [Gitlab](https://about.gitlab.com/)
-- [Onedev](https://code.onedev.io/)
-- [Sourcehut](https://sourcehut.org/)
+- [GitLab](https://about.gitlab.com/)
+- [Bitbucket](https://bitbucket.org)
+- [OneDev](https://code.onedev.io/)
+- [SourceHut](https://sourcehut.org/)
 
-But you can also backup every repository that is not hosted on any of those hosters whith the `Any` key.
+But you can also back up repositories that are not hosted on any of those hosters with the `Any` key.

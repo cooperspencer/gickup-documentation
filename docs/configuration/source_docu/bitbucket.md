@@ -11,6 +11,8 @@ source:
       user: some-user
       token: your-token # basically the app password
       token_file: token.txt
+      organization: some-workspace
+      email: your-email@example.com
       username: your-user
       password: your-password
       ssh: true
@@ -28,10 +30,10 @@ source:
         - bar1
       filter:
         lastactivity: 1y
-        excludeforks: true
 ```
 - `url`: if empty, https://bitbucket.org is used.
 - `user`: the user you want to clone the repositories from.
+- `organization`: workspace to list repositories from.
 :::tip
 if you want to get everything from your user, leave out the `user` parameter and just use the token.
 :::
@@ -41,6 +43,7 @@ for the clone process, either use:
  - sshkey
  - nothing, if you only clone public repositories
 :::
+- `email`: email address used for Bitbucket API basic authentication together with `password`.
 - `username`: user that will be used for the clone process.
 - `password`: password for said user.
 - `token`: this is an app password.
@@ -53,4 +56,3 @@ for the clone process, either use:
 - `includeorgs`: only clone those specific workspace repositories.
 - `filter`:
   - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)
-  - `excludeforks`: do not clone forked repos

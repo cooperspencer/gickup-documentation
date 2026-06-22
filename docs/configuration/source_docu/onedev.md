@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Onedev
+# OneDev
 
 ```yaml title="config"
 source:
@@ -31,7 +31,7 @@ source:
         lastactivity: 1y
         excludeforks: true
 ```
-- `token`: your onedev token. You don't need one, if you backup only public repositories. It can also be an environment variable.
+- `token`: your OneDev token. You don't need one if you back up only public repositories. It can also be an environment variable.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `url`: if empty, https://code.onedev.io is used.
 - `user`: the user you want to clone the repositories from.
@@ -52,7 +52,7 @@ for the clone process, either use:
 - `include`: only clone those specific repositories.
 - `excludeorgs`: leave out specific organizations of the user.
 - `includeorgs`: only clone those specific organizations repositories.
-- `issues`: creates a backup of the issues of the repositorie. works only with a local destination.
+- `issues`: creates a backup of the issues of the repository. Works only with a local destination.
 - `filter`:
   - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)
   - `excludeforks`: do not clone forked repos

@@ -39,7 +39,7 @@ source:
           - whatever
 ```
 
-- `token`: your gitea token. You don't need one, if you backup only public repositories. It can also be an environment variable.
+- `token`: your Gitea token. You don't need one if you back up only public repositories. It can also be an environment variable.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `url`: if empty, https://gitea.com is used.
 - `user`: the user you want to clone the repositories from.
@@ -63,7 +63,7 @@ for the clone process, either use:
 - `includeorgs`: only clone those specific organizations repositories.
 - `wiki`: also clone the wikis of the repositories.
 - `starred`: also clone the starred repositories of the `user`.
-- `issues`: creates a backup of the issues of the repositorie. works only with a local destination.
+- `issues`: creates a backup of the issues of the repository. Works only with a local destination.
 - `filter`:
   - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)
   - `stars`: clone repos with at least x stars

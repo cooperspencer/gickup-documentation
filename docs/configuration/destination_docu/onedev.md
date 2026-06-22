@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Onedev
+# OneDev
 
 ```yaml title="config"
 destination:
@@ -13,8 +13,8 @@ destination:
       organization: myorg
       force: true
 ```
-- `token`: your onedev token.
+- `token`: your OneDev token.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `url`: if empty, https://code.onedev.io is used.
-- `organization`: name of the parent repository you want to backup to.
+- `organization`: name of the parent project you want to back up to.
 - `force`: enable force push.

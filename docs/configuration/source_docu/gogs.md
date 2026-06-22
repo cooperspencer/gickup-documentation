@@ -34,7 +34,7 @@ source:
         excludeforks: true
 ```
 
-- `token`: your gogs token. You don't need one, if you backup only public repositories. It can also be an environment variable.
+- `token`: your Gogs token. You don't need one if you back up only public repositories. It can also be an environment variable.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `url`: there is no default value.
 - `user`: the user you want to clone the repositories from.
@@ -57,7 +57,7 @@ for the clone process, either use:
 - `excludeorgs`: leave out specific organizations of the user.
 - `includeorgs`: only clone those specific organizations repositories.
 - `wiki`: also clone the wikis of the repositories.
-- `issues`: creates a backup of the issues of the repositorie. works only with a local destination.
+- `issues`: creates a backup of the issues of the repository. Works only with a local destination.
 - `filter`:
   - `lastactivity`: only repos that were active in this time frame are cloned (y, M, d, h, m, s)
   - `stars`: clone repos with at least x stars.

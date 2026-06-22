@@ -18,10 +18,10 @@ destination:
         repositories: private
       force: true
 ```
-- `token`: your gogs token.
+- `token`: your Gogs token.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `url`: there is no default value.
-- `user`: the user/org you want to mirror the repositories to. 
+- `user`: the user or organization you want to mirror the repositories to.
 - `createorg`: if activated, it will create the value in user as organization if it doesn't exist on the system.
 :::tip
 if `user` is empty and `createorg` is set to `true`, it creates organizations based on the original author.

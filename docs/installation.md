@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Binary
 
-Download the [latest release](https://github.com/cooperspencer/gickup/releases/latest) for your OS and architecture from Github and unpack it.
+Download the [latest release](https://github.com/cooperspencer/gickup/releases/latest) for your OS and architecture from GitHub and unpack it.
 Alternatively, you can copy the `gickup` binary to a directory from your `$PATH` variable, to use it globally.
 
 ## Linux/Mac
@@ -23,7 +23,7 @@ gickup.exe conf.yml
 
 ## Docker
 
-You can grab the latest version of gickup from [Github](https://github.com/cooperspencer/gickup/pkgs/container/gickup) or [Docker](https://hub.docker.com/r/buddyspencer/gickup).
+You can grab the latest version of gickup from [GitHub](https://github.com/cooperspencer/gickup/pkgs/container/gickup) or [Docker](https://hub.docker.com/r/buddyspencer/gickup).
 
 ## Pure Docker
 
@@ -44,7 +44,7 @@ docker compose up -d
 
 If you want to use the latest version of the `main` branch, you can also compile it yourself.
 
-Prerequisits:
+Prerequisites:
 - [git](https://git-scm.com/)
 - [go](https://go.dev/)
 
