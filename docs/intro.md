@@ -19,6 +19,7 @@ You can back up all your repositories, or selected favorites, from:
 - [Bitbucket](https://bitbucket.org)
 - [OneDev](https://code.onedev.io/)
 - [SourceHut](https://sourcehut.org/)
+- [Radicle](https://radicle.network)
 
 Or basically everywhere with enough configuration.
 
