@@ -11,6 +11,7 @@ Gickup supports various code hosters to mirror repositories:
 - [GitLab](https://about.gitlab.com/) (mirroring requires an Enterprise license)
 - [OneDev](https://code.onedev.io/)
 - [SourceHut](https://sourcehut.org/)
+- [Radicle](https://radicle.network)
 
 Or store them as archives:
 - [S3](https://aws.amazon.com/s3/) (and S3-compatible storage)
