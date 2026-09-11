@@ -10,6 +10,8 @@ source:
     - token: some-token
       token_file: token.txt
       user: some-user
+      # url: https://github.example.com
+      contributed: true
       username: your-user
       password: your-password
       ssh: true
@@ -46,6 +48,7 @@ source:
 
 - `token`: your GitHub token. You don't need one if you back up only public repositories, although it is possible to hit the GitHub API limit. It can also be an environment variable.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
+- `url`: GitHub base URL; defaults to `https://github.com`. Set your GitHub Enterprise Server base URL here.
 - `user`: the user you want to clone the repositories from.
 :::tip
 if you want to get everything from your user, leave out the `user` parameter and just use the token.
@@ -67,6 +70,7 @@ for the clone process, either use:
 - `includeorgs`: only clone those specific organizations repositories.
 - `wiki`: also clone the wikis of the repositories.
 - `starred`: also clone the starred repositories of the `user`.
+- `contributed`: also clone repositories the user contributed to through commits, pull requests, or repository creation. Requires token authentication; unsupported with GitHub App authentication.
 - `issues`: creates a backup of the issues of the repository. Works only with a local destination.
 - `gists`: also clone the gists of the `user`.
 - `app_id`: GitHub App ID. Use it with `app_installation_id` and `app_private_key_file` to authenticate as a GitHub App instead of using `token`.

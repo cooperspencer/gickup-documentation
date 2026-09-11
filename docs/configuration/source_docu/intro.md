@@ -13,4 +13,7 @@ Gickup supports various code hosters:
 - [OneDev](https://code.onedev.io/)
 - [SourceHut](https://sourcehut.org/)
 
-But you can also back up repositories that are not hosted on any of those hosters with the `Any` key.
+- [Opengist](opengist.md)
+- Forgejo and Codeberg, using the [Gitea source](gitea.md)
+
+Use the [Any source](any.md) with the lowercase `any` key for other Git URLs or local repositories.

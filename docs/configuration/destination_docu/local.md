@@ -20,11 +20,11 @@ destination:
 If you use Docker, don't forget to mount the path of your backup!
 :::
 - `structured`: if set to `true`, it checks out the repos in a more structured way, like `hoster/user|organization/repository`.
-- `zip`: zips the repository.
-- `keep`: keeps x latest backups.
+- `zip`: zips the repository and removes the unpacked backup after archiving.
+- `keep`: when greater than zero, creates timestamped backups and keeps the newest specified number per repository. When omitted or zero, updates the same backup location. Retention groups directories, ZIP archives, and issue files with the same numeric timestamp as one backup; entries without a numeric timestamp prefix are ignored.
 - `bare`: clones it as bare.
 - `mirror`: clones it as a mirror.
-- `lfs`: uses lfs to clone repositories.
+- `lfs`: uses Git and Git LFS for cloning and updating. Bare and mirror backups fetch all LFS objects, including objects outside the default branch.
 :::warning
-`git` and `git-lfs` must be installed on your system.
+With `lfs: true`, `git` and `git-lfs` must be installed on your system.
 :::

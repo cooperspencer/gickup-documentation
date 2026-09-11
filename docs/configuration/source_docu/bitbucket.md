@@ -9,7 +9,7 @@ source:
   bitbucket:
     - url: http(s)://url-to-bitbucket
       user: some-user
-      token: your-token # basically the app password
+      token: your-token
       token_file: token.txt
       organization: some-workspace
       email: your-email@example.com
@@ -35,7 +35,7 @@ source:
 - `user`: the user you want to clone the repositories from.
 - `organization`: workspace to list repositories from.
 :::tip
-if you want to get everything from your user, leave out the `user` parameter and just use the token.
+Set `email` for API authentication and `organization` to select the workspace. `user` falls back to `username` when omitted.
 :::
 :::warning
 for the clone process, either use:
@@ -46,7 +46,7 @@ for the clone process, either use:
 - `email`: email address used for Bitbucket API basic authentication together with `password`.
 - `username`: user that will be used for the clone process.
 - `password`: password for said user.
-- `token`: this is an app password.
+- `token`: API credential used as the password when `password` is omitted. Can also be the name of an environment variable containing the credential.
 - `token_file`: alternatively, specify the token in a file, relative to current working directory when executed.
 - `ssh`: boolean value if the clone should be done via ssh.
 - `sshkey`: if empty, it uses your home directories' .ssh/id_rsa.

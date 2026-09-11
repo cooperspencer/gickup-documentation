@@ -7,10 +7,10 @@ sidebar_position: 3
 There are additional options to set.
 
 ```yaml title="config"
-cron: 0 22 * * *
+cron: "0 22 * * *"
 
 log:
-  timeformat: 2006-01-02 15:04:05
+  timeformat: "2006-01-02 15:04:05"
   file-logging:
     dir: log
     file: gickup.log
@@ -24,10 +24,12 @@ metrics:
     urls:
       - http(s)://url-to-make-request-to
       - http(s)://another-url-to-make-request-to
+    failure_urls:
+      - https://hc-ping.com/your-check-id/fail
   push:
     ntfy:
     - url: http(s)://url-to-ntfy/your-topic
-      token: your-token 
+      token: your-token
       user: your-user
       password: your-password
       email: your-email@example.com
@@ -42,7 +44,7 @@ metrics:
       tags:
         - your-tag
 ```
-- `cron`: you can add a cron expression to run gickup more than once. You can create and test the expression on https://crontab.guru/.
+- `cron`: a five-field cron expression. Without it, Gickup runs once and exits. With a valid schedule, it waits until the scheduled time for its first backup. The example runs daily at 22:00 in the process timezone.
 :::tip
 If gickup runs in Docker, you might want to set the timezone for your container.
 :::
@@ -52,19 +54,17 @@ If gickup runs in Docker, you might want to set the timezone for your container.
         - `dir`: where to store your log.
         - `file`: in which file to store your log.
         - `maxage`: automatically cleanup files older than X days.
-:::tip
-if `token` is set, `user` and `password` are not used.
-:::
 - `metrics`: everything related to metrics.
-    - `prometheus`: enable prometheus metrics.
+    - `prometheus`: enable Prometheus metrics in scheduled mode. Configure the listener in the first configuration.
         - `endpoint`: by default it is `/metrics`, but set it to whatever you prefer.
         - `listen_addr`: by default it listens on `:6178`.
     - `heartbeat`: send `GET` requests to monitoring services like https://healthchecks.io/ or https://deadmanssnitch.com/.
-        - `urls`: list of urls.
-    - `push`: you can configure pushgateways to get notifications on your phone/browser
+        - `urls`: URLs to request after a successful run.
+        - `failure_urls`: URLs to request instead when the run recorded errors. If omitted, failed runs send no heartbeat.
+    - `push`: configure notifications on your phone/browser. Notifications use the title `Backup done` on success or `Backup failed` when the run recorded errors, with a reminder to check the logs.
         - `ntfy`: [ntfy](https://ntfy.sh/). a list with the following parameters
           - `url`: url to your ntfy
-          - `token`: token of ntfy, can be an environment variable 
+          - `token`: token of ntfy, can be an environment variable. Takes precedence over `user` and `password`.
           - `user`: your ntfy user
           - `password`: your ntfy password
           - `email`: optional email address passed as the `Email` header for ntfy mail delivery
@@ -76,4 +76,4 @@ if `token` is set, `user` and `password` are not used.
           - `config`: the id of your configuration in apprise
           - `tags`: tags that you defined in your configuration in apprise.
           - `notification_urls`: if you don't use configuration, you can add urls to notify directly here. [notification services](https://github.com/caronc/apprise/wiki)
-        
+

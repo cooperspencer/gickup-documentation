@@ -30,3 +30,5 @@ destination:
 - `app_private_key_file`: path to the GitHub App RSA private key PEM file.
 - `visibility`: set the visibility of created organizations and repositories.
     - `repositories`: can be `private` or `public`, default is `private`.
+
+GitHub App authentication requires `Contents: write` for pushes and `Administration: write` to create repositories. Gickup uses the App installation token for both API operations and destination pushes.
