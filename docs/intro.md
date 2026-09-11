@@ -4,7 +4,7 @@ slug: /
 title: Gickup
 ---
 
-# Backup all your repositories with **Ease**.
+# Backup all your repositories with **Ease**
 
 Gickup is written in [go](https://go.dev/).
 
@@ -12,7 +12,7 @@ It is not necessary to have git installed on your system unless you use features
 You can back up all your repositories, or selected favorites, from:
 
 - [GitHub](https://github.com/)
-- [Gitea](https://gitea.io/en-us/)
+- [Gitea](https://about.gitea.com/)
 - [Gogs](https://gogs.io/)
 - [Forgejo/Codeberg](https://forgejo.org/)
 - [GitLab](https://about.gitlab.com/)

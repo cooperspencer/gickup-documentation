@@ -6,7 +6,7 @@ sidebar_position: 0
 
 Gickup supports various code hosters:
 - [GitHub](https://github.com/)
-- [Gitea](https://gitea.io/en-us/)
+- [Gitea](https://about.gitea.com/)
 - [Gogs](https://gogs.io/)
 - [GitLab](https://about.gitlab.com/)
 - [Bitbucket](https://bitbucket.org)

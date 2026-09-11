@@ -6,9 +6,9 @@ sidebar_position: 0
 
 Gickup supports various code hosters to mirror repositories:
 - [GitHub](https://github.com/)
-- [Gitea](gitea.md), including Forgejo and Codeberg
+- [Gitea](https://about.gitea.com/), including Forgejo and Codeberg
 - [Gogs](https://gogs.io/)
-- [GitLab](gitlab.md) (Gickup can clone and push with `mirror.enabled: true`)
+- [GitLab](https://about.gitlab.com/) (Gickup can clone and push with `mirror.enabled: true`)
 - [OneDev](https://code.onedev.io/)
 - [SourceHut](https://sourcehut.org/)
 - [Radicle](https://radicle.network)
